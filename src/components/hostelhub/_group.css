@@ -1,0 +1,90 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=Plus+Jakarta+Sans:wght@500;600;700;800&display=swap');
+
+:root {
+  --hh-blue-50: #eef4ff;
+  --hh-blue-100: #dbe6ff;
+  --hh-blue-200: #bcd0ff;
+  --hh-blue-300: #8eafff;
+  --hh-blue-400: #5d85fb;
+  --hh-blue-500: #3b63f0;
+  --hh-blue-600: #2647d4;
+  --hh-blue-700: #1f37ab;
+  --hh-blue-800: #1c308a;
+  --hh-blue-900: #122158;
+  --hh-blue-950: #0c1640;
+
+  --hh-green-50: #ecfdf3;
+  --hh-green-100: #d1fadf;
+  --hh-green-300: #6ce9a6;
+  --hh-green-500: #12b76a;
+  --hh-green-600: #039855;
+  --hh-green-700: #027a48;
+
+  --hh-amber-500: #f59e0b;
+  --hh-rose-500: #f43f5e;
+
+  --hh-ink-900: #0b1220;
+  --hh-ink-800: #111a2e;
+  --hh-ink-700: #1f2a44;
+  --hh-ink-600: #364056;
+  --hh-ink-500: #586273;
+  --hh-ink-400: #7c8699;
+  --hh-ink-300: #a8b0c0;
+  --hh-ink-200: #d4d9e3;
+  --hh-ink-100: #e8ebf2;
+  --hh-ink-50:  #f5f7fb;
+
+  --hh-bg: #f6f8fc;
+  --hh-card: #ffffff;
+  --hh-border: #e6eaf2;
+  --hh-radius-sm: 10px;
+  --hh-radius: 14px;
+  --hh-radius-lg: 22px;
+  --hh-radius-xl: 28px;
+
+  --hh-shadow-sm: 0 1px 2px rgba(15, 23, 42, 0.04), 0 1px 3px rgba(15, 23, 42, 0.06);
+  --hh-shadow:    0 4px 14px -4px rgba(15, 23, 42, 0.08), 0 2px 6px -2px rgba(15, 23, 42, 0.05);
+  --hh-shadow-lg: 0 18px 40px -18px rgba(28, 48, 138, 0.25), 0 8px 18px -10px rgba(15, 23, 42, 0.08);
+
+  --hh-font-sans: 'Inter', ui-sans-serif, system-ui, -apple-system, sans-serif;
+  --hh-font-display: 'Plus Jakarta Sans', 'Inter', sans-serif;
+}
+
+.hh-root {
+  font-family: var(--hh-font-sans);
+  color: var(--hh-ink-900);
+  background: var(--hh-bg);
+  -webkit-font-smoothing: antialiased;
+  font-feature-settings: 'cv11', 'ss01', 'ss03';
+  letter-spacing: -0.01em;
+}
+
+.hh-display {
+  font-family: var(--hh-font-display);
+  letter-spacing: -0.025em;
+}
+
+.hh-card {
+  background: var(--hh-card);
+  border: 1px solid var(--hh-border);
+  border-radius: var(--hh-radius);
+  box-shadow: var(--hh-shadow-sm);
+}
+
+.hh-grid-bg {
+  background-image:
+    linear-gradient(var(--hh-ink-100) 1px, transparent 1px),
+    linear-gradient(90deg, var(--hh-ink-100) 1px, transparent 1px);
+  background-size: 32px 32px;
+}
+
+.hh-mesh {
+  background:
+    radial-gradient(60% 50% at 80% 0%, rgba(59,99,240,0.18) 0%, rgba(59,99,240,0) 70%),
+    radial-gradient(50% 50% at 0% 30%, rgba(18,183,106,0.14) 0%, rgba(18,183,106,0) 70%),
+    radial-gradient(40% 40% at 100% 100%, rgba(59,99,240,0.10) 0%, rgba(59,99,240,0) 70%),
+    linear-gradient(180deg, #ffffff 0%, #f6f8fc 100%);
+}
+
+.hh-no-scrollbar::-webkit-scrollbar { display: none; }
+.hh-no-scrollbar { scrollbar-width: none; }
