@@ -12,7 +12,7 @@ export default function App() {
   return (
     <BrowserRouter>
       <Routes>
-        <Route path="/" element={<Index />} />
+        <Route path="/" element={<Landing />} />
         <Route path="/landing" element={<Landing />} />
         <Route path="/student-dashboard" element={<StudentDashboard />} />
         <Route path="/listings" element={<Listings />} />
@@ -20,7 +20,7 @@ export default function App() {
         <Route path="/agent-dashboard" element={<AgentDashboard />} />
         <Route path="/admin-dashboard" element={<AdminDashboard />} />
         <Route path="/payment" element={<PaymentFlow />} />
-        <Route path="*" element={<Index />} />
+        <Route path="*" element={<Landing/>} />
       </Routes>
     </BrowserRouter>
   );
